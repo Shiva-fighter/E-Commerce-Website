@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import WishList from "./Pages/WishList/WishList";
+import { Signup } from "./Components/Signup/Signup";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Naav />
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Signup />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/products/:id" element={<ProductDetail />} />
