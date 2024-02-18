@@ -19,8 +19,8 @@ function App() {
       <Naav />
       <div className="main">
         <Routes>
-        <Route path="/" element={<Signup />} />
-          <Route path="/home" element={<Home />} />
+        {/* <Route path="/" element={<Signup />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/products/:id" element={<ProductDetail />} />
